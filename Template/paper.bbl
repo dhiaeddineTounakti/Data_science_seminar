@@ -1,0 +1,9 @@
+\begin{thebibliography}{TRR16}
+
+\bibitem[TRR16]{taubmann2016cloudphylactor}
+Benjamin Taubmann, Noëlle Rakotondravony, and Hans~P. Reiser.
+\newblock {CloudPhylactor:} harnessing mandatory access control for virtual
+  machine introspection in cloud data centers.
+\newblock In {\em 2016 IEEE Trustcom/BigDataSE/ISPA}, pages 957--964, Aug 2016.
+
+\end{thebibliography}

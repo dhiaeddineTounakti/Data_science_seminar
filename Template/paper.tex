@@ -1,0 +1,84 @@
+%This document will explain the major features of the document
+%class. For further information, the {\itshape \LaTeX\ User's Guide} is
+%available from
+%\url{https://www.acm.org/publications/proceedings-template}.
+\documentclass[sigconf]{acmart}
+
+\usepackage{lipsum}
+
+\begin{document}
+
+\settopmatter{printacmref=false} % Removes citation information below abstract
+\renewcommand\footnotetextcopyrightpermission[1]{} % removes footnote with conference information in first column
+\pagestyle{plain} % removes running headers
+\settopmatter{printfolios=true}
+
+
+\title{The Name of the Title is Hope}
+\author{Your Name}
+\affiliation{\institution{University of Passau}}
+\email{your.name@uni-passau.de}
+
+
+
+
+\begin{abstract}
+ Here goes your abstract.
+\lipsum[1]
+\end{abstract}
+
+
+
+%%
+%% Keywords. The author(s) should pick words that accurately describe
+%% the work being presented. Separate the keywords with commas.
+%\keywords{datasets, neural networks, gaze detection, text tagging}
+
+
+
+
+\maketitle
+
+\section{Introduction}
+\lipsum
+
+
+\section{Background}
+\subsection{Part One}
+
+\lipsum[1-2]
+
+
+\subsection{Part Two}
+
+\lipsum[3-4]
+
+\section{Part Three}
+
+\lipsum[5-6]
+
+\section{Related Work}
+
+Taubmann et al. presented the greatest work of all~\cite{taubmann2016cloudphylactor}.
+
+
+
+\section{Conclusion}
+
+\section{Modifications}
+
+
+
+
+
+
+\bibliographystyle{alpha}
+\bibliography{literature}
+
+
+\appendix
+
+
+\end{document}
+\endinput
+
