@@ -1,13 +1,13 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.5.7)  7 MAY 2020 16:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.11)  12 JUN 2020 01:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/mnt/c/Users/dhiae/Desktop/Passau-SoSe-2020/Cloud Computing M. Sc. (Seminar)/Template/paper"
-(/mnt/c/Users/dhiae/Desktop/Passau-SoSe-2020/Cloud Computing M. Sc. (Seminar)/Template/paper.tex
+**/home/dhiaeddine/Projects/Data_science_seminar/Template/paper.tex
+(/home/dhiaeddine/Projects/Data_science_seminar/Template/paper.tex
 LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
-(./acmart.cls
+Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
+(/home/dhiaeddine/Projects/Data_science_seminar/Template/acmart.cls
 Document Class: acmart 2018/08/12 v1.55 Typesetting articles for the Association for Computing Machinery
 (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
@@ -331,14 +331,57 @@ Package: nccfoots 2005/02/03 v1.2 NCC Footnotes Package (NCC)
 Package: iftex 2013/04/04 v0.2 Provides if(tex) conditional for PDFTeX, XeTeX, and LuaTeX
 ) (/usr/share/texlive/texmf-dist/tex/generic/pdftex/glyphtounicode.tex) (/usr/share/texlive/texmf-dist/tex/latex/cmap/cmap.sty
 Package: cmap 2008/03/06 v1.0h CMap support: searchable PDF
-) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
- (/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
-File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-)<<t1.cmap>>) (/usr/share/texlive/texmf-dist/tex/latex/libertine/libertine.sty
-Package: libertine 2018/01/03 (Bob Tennent) Supports Libertine and Biolinum fonts for all LaTeX engines.
- (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+)
+
+Class acmart Warning: You do not have the libertine package installed. Please upgrade your TeX on input line 648.
+
+
+Class acmart Warning: You do not have the zi4 package installed. Please upgrade your TeX on input line 651.
+
+
+Class acmart Warning: You do not have the newtxmath package installed. Please upgrade your TeX on input line 654.
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen130
+\captionmargin@=\dimen131
+\captionwidth=\dimen132
+\caption@tempdima=\dimen133
+\caption@indent=\dimen134
+\caption@parindent=\dimen135
+\caption@hangindent=\dimen136
+)
+Package caption Info: AMS or SMF document class.
+\c@ContinuedFloat=\count121
+Package caption Info: hyperref package is loaded.
+) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count122
+\float@exts=\toks29
+\float@box=\box29
+\@float@everytoks=\toks30
+\@floatcapt=\box30
+)
+\@float@every@sidebar=\toks31
+\c@sidebar=\count123
+\fulltextwidth=\dimen137
+\@ACM@labelwidth=\dimen138
+\listisep=\skip55
+\num@authorgroups=\count124
+\num@authors=\count125
+\@ACM@badge@width=\skip56
+\@ACM@title@width=\skip57
+\@ACM@badge@skip=\skip58
+Class acmart Info: Printing CCS on input line 1297.
+Class acmart Info: Printing bibformat on input line 1297.
+Class acmart Info: Suppressing folios on input line 1304.
+Class acmart Info: Setting authorsperrow to 0 on input line 1307.
+ (/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write4
+ Excluding comment 'comment') Excluding comment 'CCSXML' (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -417,176 +460,7 @@ Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
 Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
-) (/usr/share/texlive/texmf-dist/tex/latex/mweights/mweights.sty
-Package: mweights 2017/03/30 (Bob Tennent) Support package for multiple-weight font packages. 
-LaTeX Info: Redefining \bfseries on input line 22.
-LaTeX Info: Redefining \mdseries on input line 30.
-LaTeX Info: Redefining \rmfamily on input line 38.
-LaTeX Info: Redefining \sffamily on input line 66.
-LaTeX Info: Redefining \ttfamily on input line 94.
-) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
-) (/usr/share/texlive/texmf-dist/tex/latex/fontaxes/fontaxes.sty
-Package: fontaxes 2014/03/23 v1.0d Font selection axes
-LaTeX Info: Redefining \upshape on input line 29.
-LaTeX Info: Redefining \itshape on input line 31.
-LaTeX Info: Redefining \slshape on input line 33.
-LaTeX Info: Redefining \scshape on input line 37.
 )
-LaTeX Info: Redefining \oldstylenums on input line 490.
- (/usr/share/texlive/texmf-dist/tex/latex/libertine/LinLibertine_I.tex)) (/usr/share/texlive/texmf-dist/tex/latex/inconsolata/zi4.sty
-Package: zi4 2017/01/04 v1.112
- `inconsolata-zi4' v1.112, 2017/01/04 Text macros for Inconsolata (msharpe)
-\zifour@ocount=\count121
-) (/usr/share/texlive/texmf-dist/tex/latex/newtx/newtxmath.sty
-Package: newtxmath 2017/12/14 v1.53
- `newtxmath' v1.53, 2017/12/14 Math macros based on txfonts (msharpe) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/centernot.sty
-Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
-) (/usr/share/texlive/texmf-dist/tex/generic/kastrup/binhex.tex)
-\tx@Isdigit=\count122
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 156.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/LinuxLibertineT-TLF/m/n on input line 156.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/LinuxLibertineT-TLF/m/n on input line 156.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/LinuxLibertineT-TLF/m/n --> OT1/LinuxLibertineT-TLF/sb/n on input line 157.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 163.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/LinuxBiolinumT-TLF/m/n on input line 163.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/LinuxBiolinumT-TLF/m/n on input line 163.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 164.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/LinuxLibertineT-TLF/m/it on input line 164.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/LinuxLibertineT-TLF/m/it on input line 164.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 165.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/zi4/m/n on input line 165.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/zi4/m/n on input line 165.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 167.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/LinuxLibertineT-TLF/sb/n on input line 167.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/LinuxLibertineT-TLF/sb/n on input line 167.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/LinuxLibertineT-TLF/m/it --> OT1/LinuxLibertineT-TLF/sb/it on input line 168.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/LinuxBiolinumT-TLF/m/n --> T1/LinuxBiolinumT-TLF/b/n on input line 169.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/zi4/m/n --> T1/zi4/b/n on input line 170.
-LaTeX Font Info:    Redeclaring symbol font `letters' on input line 182.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
-(Font)                  OML/cmm/m/it --> OML/nxlmi/m/it on input line 182.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/cmm/b/it --> OML/nxlmi/m/it on input line 182.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/nxlmi/m/it --> OML/nxlmi/b/it on input line 183.
-\symlettersA=\mathgroup6
-LaTeX Font Info:    Overwriting symbol font `lettersA' in version `bold'
-(Font)                  U/ntxmia/m/it --> U/ntxmia/b/it on input line 238.
-LaTeX Font Info:    Redeclaring math alphabet \mathfrak on input line 240.
-LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 259.
-LaTeX Font Info:    Encoding `OMS' has changed to `LMS' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 259.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> LMS/ntxsy/m/n on input line 259.
-LaTeX Font Info:    Encoding `OMS' has changed to `LMS' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 259.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> LMS/ntxsy/m/n on input line 259.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  LMS/ntxsy/m/n --> LMS/ntxsy/b/n on input line 260.
-\symAMSm=\mathgroup7
-LaTeX Font Info:    Overwriting symbol font `AMSm' in version `bold'
-(Font)                  U/ntxsym/m/n --> U/ntxsym/b/n on input line 283.
-\symsymbolsC=\mathgroup8
-LaTeX Font Info:    Overwriting symbol font `symbolsC' in version `bold'
-(Font)                  U/ntxsyc/m/n --> U/ntxsyc/b/n on input line 304.
-LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 317.
-LaTeX Font Info:    Encoding `OMX' has changed to `LMX' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 317.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> LMX/ntxexx/m/n on input line 317.
-LaTeX Font Info:    Encoding `OMX' has changed to `LMX' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 317.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> LMX/ntxexx/m/n on input line 317.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  LMX/ntxexx/m/n --> LMX/ntxexx/b/n on input line 318.
-\symlargesymbolsTXA=\mathgroup9
-LaTeX Font Info:    Overwriting symbol font `largesymbolsTXA' in version `bold'
-(Font)                  U/ntxexa/m/n --> U/ntxexa/b/n on input line 332.
-LaTeX Font Info:    Redeclaring math delimiter \lgroup on input line 503.
-LaTeX Font Info:    Redeclaring math delimiter \rgroup on input line 504.
-LaTeX Font Info:    Redeclaring math delimiter \lmoustache on input line 505.
-LaTeX Font Info:    Redeclaring math delimiter \rmoustache on input line 506.
-LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 512.
-LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 513.
-LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 514.
-LaTeX Font Info:    Redeclaring math delimiter \rceil on input line 515.
-LaTeX Font Info:    Redeclaring math delimiter \lbrace on input line 516.
-LaTeX Font Info:    Redeclaring math delimiter \rbrace on input line 517.
-LaTeX Font Info:    Redeclaring math delimiter \langle on input line 518.
-LaTeX Font Info:    Redeclaring math delimiter \rangle on input line 520.
-LaTeX Font Info:    Redeclaring math symbol \mid on input line 522.
-LaTeX Font Info:    Redeclaring math delimiter \arrowvert on input line 524.
-LaTeX Font Info:    Redeclaring math delimiter \vert on input line 525.
-LaTeX Font Info:    Redeclaring math symbol \parallel on input line 526.
-LaTeX Font Info:    Redeclaring math delimiter \Arrowvert on input line 527.
-LaTeX Font Info:    Redeclaring math delimiter \Vert on input line 528.
-LaTeX Font Info:    Redeclaring math delimiter \updownarrow on input line 530.
-LaTeX Font Info:    Redeclaring math delimiter \Updownarrow on input line 531.
-LaTeX Font Info:    Redeclaring math delimiter \lvert on input line 536.
-LaTeX Font Info:    Redeclaring math delimiter \rvert on input line 537.
-LaTeX Font Info:    Redeclaring math delimiter \lVert on input line 538.
-LaTeX Font Info:    Redeclaring math delimiter \rVert on input line 539.
-LaTeX Info: Redefining \not on input line 2146.
-LaTeX Info: Redefining \textsquare on input line 2176.
-LaTeX Info: Redefining \openbox on input line 2178.
-) (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
- (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen130
-\captionmargin@=\dimen131
-\captionwidth=\dimen132
-\caption@tempdima=\dimen133
-\caption@indent=\dimen134
-\caption@parindent=\dimen135
-\caption@hangindent=\dimen136
-)
-Package caption Info: AMS or SMF document class.
-\c@ContinuedFloat=\count123
-Package caption Info: hyperref package is loaded.
-) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count124
-\float@exts=\toks29
-\float@box=\box29
-\@float@everytoks=\toks30
-\@floatcapt=\box30
-)
-\@float@every@sidebar=\toks31
-\c@sidebar=\count125
-\fulltextwidth=\dimen137
-\@ACM@labelwidth=\dimen138
-\listisep=\skip55
-\num@authorgroups=\count126
-\num@authors=\count127
-\@ACM@badge@width=\skip56
-\@ACM@title@width=\skip57
-\@ACM@badge@skip=\skip58
-Class acmart Info: Printing CCS on input line 1297.
-Class acmart Info: Printing bibformat on input line 1297.
-Class acmart Info: Suppressing folios on input line 1304.
-Class acmart Info: Setting authorsperrow to 0 on input line 1307.
- (/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
-\CommentStream=\write4
- Excluding comment 'comment') Excluding comment 'CCSXML'
 \mktitle@bx=\box31
 \@ACM@commabox=\box32
 \author@bx=\box33
@@ -607,27 +481,16 @@ Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footers
 \@folio@wd=\dimen140
 \@folio@ht=\dimen141
 \@folio@voffset=\dimen142
- Special comment 'acks'
-LaTeX Font Info:    Try loading font information for T1+LinuxLibertineT-TLF on input line 2668.
- (/usr/share/texlive/texmf-dist/tex/latex/libertine/T1LinuxLibertineT-TLF.fd
-File: T1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for T1/LinuxLibertineT-TLF.
-)
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 2668.
-) (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
+ Special comment 'acks') (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count128
+\c@lips@count=\count126
 )
 Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 9.
-\c@theorem=\count129
- Excluding comment 'screenonly' Include comment 'printonly' Include comment 'anonsuppress' (./paper.aux)
+\c@theorem=\count127
+ Excluding comment 'screenonly' Include comment 'printonly' Include comment 'anonsuppress' (/home/dhiaeddine/Projects/Data_science_seminar/Template/paper.aux)
 \openout1 = `paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 9.
-LaTeX Font Info:    Try loading font information for OML+nxlmi on input line 9.
- (/usr/share/texlive/texmf-dist/tex/latex/newtx/omlnxlmi.fd
-File: omlnxlmi.fd 2013/11/19 Fontinst v1.933 font definitions for OML/nxlmi.
-)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
@@ -637,11 +500,7 @@ LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 9.
-LaTeX Font Info:    Try loading font information for U+ntxexa on input line 9.
- (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxexa.fd
-File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
-)
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
@@ -653,30 +512,7 @@ LaTeX Font Info:    Try loading font information for TS1+cmr on input line 9.
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 9.
-LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 9.
- (/usr/share/texlive/texmf-dist/tex/latex/newtx/lmsntxsy.fd
-File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
-)
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 9.
-LaTeX Font Info:    Try loading font information for LMX+ntxexx on input line 9.
- (/usr/share/texlive/texmf-dist/tex/latex/newtx/lmxntxexx.fd
-File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
-)
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 9.
-LaTeX Font Info:    Try loading font information for OT1+LinuxLibertineT-TLF on input line 9.
- (/usr/share/texlive/texmf-dist/tex/latex/libertine/OT1LinuxLibertineT-TLF.fd
-File: OT1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for OT1/LinuxLibertineT-TLF.
-)
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 9.
-<<ot1.cmap>>
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 9.
-<<oml.cmap>>
+<<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
 LaTeX Font Info:    Try loading font information for U+msa on input line 9.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -684,18 +520,6 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Try loading font information for U+msb on input line 9.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for U+ntxmia on input line 9.
- (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxmia.fd
-File: untxmia.fd 2016/01/31 Fontinst v1.933 font definitions for U/ntxmia.
-)
-LaTeX Font Info:    Try loading font information for U+ntxsym on input line 9.
- (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxsym.fd
-File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
-)
-LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 9.
- (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxsyc.fd
-File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Info: Redefining \microtypecontext on input line 9.
 Package microtype Info: Generating PDF output.
@@ -707,11 +531,9 @@ Package microtype Info: Using default expansion set `basictext'.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `LinuxLibertineT-TLF' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
- ABD: EveryShipout initializing macros
+ (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+) ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box34
 Package hyperref Info: Link coloring OFF on input line 9.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -719,27 +541,27 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count130
+\c@section@level=\count128
 )
 LaTeX Info: Redefining \ref on input line 9.
 LaTeX Info: Redefining \pageref on input line 9.
 LaTeX Info: Redefining \nameref on input line 9.
- (./paper.out) (./paper.out)
+ (/home/dhiaeddine/Projects/Data_science_seminar/Template/paper.out) (/home/dhiaeddine/Projects/Data_science_seminar/Template/paper.out)
 \@outlinefile=\write5
 \openout5 = `paper.out'.
 
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count131
+\scratchcounter=\count129
 \scratchdimen=\dimen143
 \scratchbox=\box35
-\nofMPsegments=\count132
-\nofMParguments=\count133
+\nofMPsegments=\count130
+\nofMParguments=\count131
 \everyMPshowfont=\toks32
-\MPscratchCnt=\count134
+\MPscratchCnt=\count132
 \MPscratchDim=\dimen144
-\MPnumerator=\count135
-\makeMPintoPDFobject=\count136
+\MPnumerator=\count133
+\makeMPintoPDFobject=\count134
 \everyMPtoPDFconversion=\toks33
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -787,85 +609,48 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@mv@tabular=\count137
-\c@mv@boldtabular=\count138
-(/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
-Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
-)
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Class acmart Info: Suppressing bibformat on input line 11.
 Class acmart Info: Printing folios on input line 14.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 40.
-LaTeX Font Info:    Try loading font information for T1+LinuxBiolinumT-TLF on input line 40.
- (/usr/share/texlive/texmf-dist/tex/latex/libertine/T1LinuxBiolinumT-TLF.fd
-File: T1LinuxBiolinumT-TLF.fd 2017/03/20 (autoinst) Font definitions for T1/LinuxBiolinumT-TLF.
-)
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 40.
 Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `LinuxBiolinumT-TLF' (encoding: T1).
+(microtype)             `cmss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 17.28pt on input line 40.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 40.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 40.
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 40.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `LinuxLibertineT-TLF' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
- (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 ) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 40.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 40.
-
-Underfull \vbox (badness 2351) has occurred while \output is active []
+) (/home/dhiaeddine/Projects/Data_science_seminar/Template/paper.bbl
+Underfull \vbox (badness 1789) has occurred while \output is active []
 
  [1.1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-]
-Underfull \vbox (badness 4660) has occurred while \output is active []
+]) [2.2
 
- (./paper.bbl
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 7.0pt on input line 7.
-)
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 82.
- [2.2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 82.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 82.
- (./paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 82.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 82.
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 86.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 86.
+ (/home/dhiaeddine/Projects/Data_science_seminar/Template/paper.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 86.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 86.
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: 2DE897CED2314C450A95C6005C3E2F01;1102.
+(rerunfilecheck)             Checksum: 61C227EA678A77CD058C8824333C12CB;1177.
  ) 
 Here is how much of TeX's memory you used:
- 17801 strings out of 492982
- 265825 string characters out of 6134897
- 481011 words of memory out of 5000000
- 20764 multiletter control sequences out of 15000+600000
- 85683 words of font info for 141 fonts, out of 8000000 for 9000
- 1302 hyphenation exceptions out of 8191
- 60i,11n,94p,880b,480s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb>
-Output written on paper.pdf (2 pages, 280588 bytes).
+ 15571 strings out of 494923
+ 226396 string characters out of 6180742
+ 466562 words of memory out of 5000000
+ 18421 multiletter control sequences out of 15000+600000
+ 12322 words of font info for 71 fonts, out of 8000000 for 9000
+ 175 hyphenation exceptions out of 8191
+ 60i,11n,94p,852b,525s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb>
+Output written on /home/dhiaeddine/Projects/Data_science_seminar/Template/paper.pdf (2 pages, 176044 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
- 76 compressed objects within 1 object stream
- 16 named destinations out of 1000 (max. 500000)
- 23133 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 146 PDF objects out of 1000 (max. 8388607)
+ 110 compressed objects within 2 object streams
+ 20 named destinations out of 1000 (max. 500000)
+ 12385 words of extra memory for PDF output out of 14400 (max. 10000000)
 

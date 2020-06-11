@@ -1,9 +1,36 @@
-\begin{thebibliography}{TRR16}
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{WRS{\etalchar{+}}17}
 
-\bibitem[TRR16]{taubmann2016cloudphylactor}
-Benjamin Taubmann, Noëlle Rakotondravony, and Hans~P. Reiser.
-\newblock {CloudPhylactor:} harnessing mandatory access control for virtual
-  machine introspection in cloud data centers.
-\newblock In {\em 2016 IEEE Trustcom/BigDataSE/ISPA}, pages 957--964, Aug 2016.
+\bibitem[BJ19]{SGDLocalMinimum}
+A.~{Bouillard} and P.~{Jacquet}.
+\newblock Quasi black hole effect of gradient descent in large dimension:
+  Consequence on neural network learning.
+\newblock In {\em ICASSP 2019 - 2019 IEEE International Conference on
+  Acoustics, Speech and Signal Processing (ICASSP)}, pages 8365--8369, 2019.
+
+\bibitem[DAN{\etalchar{+}}18]{SGDSlow}
+E.~M. {Dogo}, O.~J. {Afolabi}, N.~I. {Nwulu}, B.~{Twala}, and C.~O.
+  {Aigbavboa}.
+\newblock A comparative analysis of gradient descent-based optimization
+  algorithms on convolutional neural networks.
+\newblock In {\em 2018 International Conference on Computational Techniques,
+  Electronics and Mechanical Systems (CTEMS)}, pages 92--99, 2018.
+
+\bibitem[Jan20]{lilipads}
+LiLi Jang.
+\newblock Gradient descent viz.
+\newblock \url {https://github.com/lilipads/gradient_descent_viz}, Online,
+  accessed 11 June 2020.
+
+\bibitem[KW52]{kiefer1952}
+J.~Kiefer and J.~Wolfowitz.
+\newblock Stochastic estimation of the maximum of a regression function.
+\newblock {\em Ann. Math. Statist.}, 23(3):462--466, 09 1952.
+
+\bibitem[WRS{\etalchar{+}}17]{wilson2017marginal}
+Ashia~C. Wilson, Rebecca Roelofs, Mitchell Stern, Nathan Srebro, and Benjamin
+  Recht.
+\newblock The marginal value of adaptive gradient methods in machine learning,
+  2017.
 
 \end{thebibliography}
