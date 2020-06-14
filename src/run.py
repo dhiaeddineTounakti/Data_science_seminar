@@ -27,6 +27,50 @@ tf.flags.DEFINE_integer("eval_frequency", 10, "Eval frequency.")
 
 FLAGS = tf.flags.FLAGS
 
+HPARAMS = {"Adam":{
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "decay_steps": 10000,
+    "batch_size": 128
+    },
+    "RMSProp": {
+        "optimizer": "RMSProp",
+        "learning_rate": 0.001,
+        "decay_steps": 10000,
+        "batch_size": 128
+    }
+    
+}
+
+def get_params(optimizer):
+    """Aggregates and returns hyper parameters."""
+    hparams = HPARAMS[optimizer]
+    hparams.update(DATASETS[FLAGS.dataset].get_params())
+    hparams = tf.contrib.training.HParams(**hparams)
+    hparams.parse(FLAGS.hparams)
+
+    return hparams
+
+
+def input_fn(params, mode):
+    dataset = DATASETS[FLAGS.dataset].read(mode)
+    if mode == tf.estimator.ModeKeys.TRAIN:
+        dataset = dataset.repeat(FLAGS.num_epochs)
+        dataset = dataset.shuffle(params.batch_size * 5)
+    dataset = dataset.map(
+        DATASETS[FLAGS.dataset].parse, num_threads=8)
+    dataset = dataset.batch(params.batch_size)
+    iterator = dataset.make_one_shot_iterator()
+    features, labels = iterator.get_next()
+    return features, labels
+
+
+
+
+
+
+
+
 MODELS = {
     # This is a dictionary of models, the keys are model names, and the values
     # are the module containing get_params, model, and eval_metrics.
@@ -34,26 +78,12 @@ MODELS = {
 }
 
 DATASETS = {
-    'cifar10':provider
+    
 }
 
-HPARAMS = {
-    "optimizer": "Adam",
-    "learning_rate": 0.001,
-    "decay_steps": 10000,
-    "batch_size": 128
-}
 
-def get_params():
-    """Aggregates and returns hyper parameters."""
-    hparams = HPARAMS
-    hparams.update(DATASETS[FLAGS.dataset].get_params())
-    hparams.update(MODELS[FLAGS.model].get_params())
 
-    hparams = tf.contrib.training.HParams(**hparams)
-    hparams.parse(FLAGS.hparams)
 
-    return hparams
 
 def make_input_fn(mode, params):
     """Returns an input function to read the dataset."""

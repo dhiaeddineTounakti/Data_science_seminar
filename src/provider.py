@@ -45,7 +45,7 @@ def prepare():
         tar.close()
 #%%
 
-def load(split):
+def read(split):
     """Create an instance of the dataset object and preprocess images"""
     """An iterator that reads and returns images and labels from cifar."""
     batches = {
