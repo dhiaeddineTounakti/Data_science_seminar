@@ -16,16 +16,37 @@ E.~M. {Dogo}, O.~J. {Afolabi}, N.~I. {Nwulu}, B.~{Twala}, and C.~O.
 \newblock In {\em 2018 International Conference on Computational Techniques,
   Electronics and Mechanical Systems (CTEMS)}, pages 92--99, 2018.
 
+\bibitem[DHS11]{AdaGrad}
+John Duchi, Elad Hazan, and Yoram Singer.
+\newblock Adaptive subgradient methods for online learning and stochastic
+  optimization.
+\newblock {\em J. Mach. Learn. Res.}, 12(null):2121–2159, July 2011.
+
+\bibitem[Hin12]{RMSProp}
+Geoff Hinton.
+\newblock Neural networks for machine learning lecture 6.
+\newblock
+  \url{http://www.cs.toronto.edu/~tijmen/csc321/slides/lecture_slides_lec6.pdf},
+  2012.
+
 \bibitem[Jan20]{lilipads}
 LiLi Jang.
 \newblock Gradient descent viz.
 \newblock \url {https://github.com/lilipads/gradient_descent_viz}, Online,
   accessed 11 June 2020.
 
+\bibitem[KB14]{kingma2014adam}
+Diederik~P. Kingma and Jimmy Ba.
+\newblock Adam: A method for stochastic optimization, 2014.
+
 \bibitem[KW52]{kiefer1952}
 J.~Kiefer and J.~Wolfowitz.
 \newblock Stochastic estimation of the maximum of a regression function.
 \newblock {\em Ann. Math. Statist.}, 23(3):462--466, 09 1952.
+
+\bibitem[Qia99]{Qian99onthe}
+Ning Qian.
+\newblock On the momentum term in gradient descent learning algorithms, 1999.
 
 \bibitem[WRS{\etalchar{+}}17]{wilson2017marginal}
 Ashia~C. Wilson, Rebecca Roelofs, Mitchell Stern, Nathan Srebro, and Benjamin

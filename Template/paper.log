@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.11)  12 JUN 2020 01:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.11)  14 JUN 2020 02:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -622,35 +622,41 @@ Package microtype Info: Loading generic protrusion settings for font family
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 ) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-) (/home/dhiaeddine/Projects/Data_science_seminar/Template/paper.bbl
-Underfull \vbox (badness 1789) has occurred while \output is active []
+)
+Overfull \hbox (7.69472pt too wide) in paragraph at lines 58--59
+\OT1/cmr/m/n/9 (-20) the \OT1/cmr/bx/n/9 Sto-chas-tic gra-di-ent de-scent with mo-men-tum \OT1/cmr/m/n/9 (-20) [[]].
+ []
 
+(/home/dhiaeddine/Projects/Data_science_seminar/Template/paper.bbl
+Missing character: There is no â in font cmr7!
+Missing character: There is no € in font cmr7!
+Missing character: There is no “ in font cmr7!
  [1.1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]) [2.2
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 86.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 86.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 109.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 109.
  (/home/dhiaeddine/Projects/Data_science_seminar/Template/paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 86.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 86.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 109.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 109.
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: 61C227EA678A77CD058C8824333C12CB;1177.
+(rerunfilecheck)             Checksum: C4E6E0B8A0FC72A938EA6AAF144E9CA7;1229.
  ) 
 Here is how much of TeX's memory you used:
- 15571 strings out of 494923
- 226396 string characters out of 6180742
- 466562 words of memory out of 5000000
- 18421 multiletter control sequences out of 15000+600000
- 12322 words of font info for 71 fonts, out of 8000000 for 9000
+ 15581 strings out of 494923
+ 226624 string characters out of 6180742
+ 467630 words of memory out of 5000000
+ 18433 multiletter control sequences out of 15000+600000
+ 12173 words of font info for 68 fonts, out of 8000000 for 9000
  175 hyphenation exceptions out of 8191
- 60i,11n,94p,852b,525s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb>
-Output written on /home/dhiaeddine/Projects/Data_science_seminar/Template/paper.pdf (2 pages, 176044 bytes).
+ 60i,11n,94p,852b,529s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb>
+Output written on /home/dhiaeddine/Projects/Data_science_seminar/Template/paper.pdf (2 pages, 206743 bytes).
 PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
- 110 compressed objects within 2 object streams
- 20 named destinations out of 1000 (max. 500000)
+ 171 PDF objects out of 1000 (max. 8388607)
+ 129 compressed objects within 2 object streams
+ 24 named destinations out of 1000 (max. 500000)
  12385 words of extra memory for PDF output out of 14400 (max. 10000000)
 

@@ -51,19 +51,42 @@ In the next sections we define $x$ to be a vector or a scalar, $t$ is the iterat
 \textbf{Stochastic Gradient descent}~\cite{kiefer1952} is the most basic Learning algorithm. To minimize the Loss function it calculates the function's gradient at a particular point and updates the point coordinates with the negative value of that gradient.
 Formally, in the iteration t SGD calculates the next point coordinate using the following formula:
 \begin{center}
-    $x_{t+1} = x_t -\alpha * \nabla L(x_t)$
+    $x_{t+1} = x_t -\alpha  \nabla L(x_t)$
 \end{center}
 One problem with SGD is that its learning speed is very slow~\cite{SGDSlow} and can get caught in a local minimum easily~\cite{SGDLocalMinimum}.
 
+To solve this issue of slow learning rate we have invented the \textbf{Stochastic gradient descent with momentum} \cite{Qian99onthe}. This aproche is inspired from classical physics where the motion equation depends on the speed of the particle which can be seen as a feedback from previous steps. This principle is applied to the SGD through the use of momentum variable. Formally:
+\begin{center}
+    $x_{t+1} = x_t -\alpha  \nabla L(x_t) + \alpha  \nabla L(x_{t-1})  \beta$
+\end{center}
+where $\beta \in [0,1[$ is a decay rate that controles how much previous steps influence the current one. Analogically it can be seen as surface friction to help a moving object stop. If it is set to 1 the algorithm will never converge. Thanks to its momentum this algorithm can escape better local minimums. 
+
+\subsection{Adaptive algorithms}
+Adaptive learning algorithms have the ability to adapt the learning rate to each parameter.
+\newline \textbf{AdaGrad}~\cite{AdaGrad} adapts the learning to each feature depending on how big is the gradient according to that feature is. Let $G_t = \sum_{\tau=1}^{t} \nabla L(x_\tau) \nabla L(x_\tau)^T$ AdaGrad calculates the new x coordinate using the following equation :
+\begin{center}
+    $x_{t+1} = x_t -\alpha G_t^{-\frac{1}{2}}\circ \nabla L(x_t)$
+\end{center}
+where $\circ$ is the Hadamard product. Generally the application as shown above is computationally slow for this reason we take only the diagonal of G since it is calculated in a linear time and approximate well the result. In practice we add an $\epsilon$ to the square root of $G_t$ in order to avoid division by 0. One downfall of this algorithm is that G is growing with each iteration which ends up slowing the learning speed.
+\newline \textbf{RMSProp}\cite{RMSProp} solves this problem by adding a decay factor to the gradient sum. Let $G_0=0$
+\begin{center}
+    $G_t = \beta G_{t-1} + (1-\beta) \nabla L(x_t) \nabla L(x_t)^T$
+\end{center}
+and the equation to calculate the next step coordinate remains the same.
+\newline  \textbf{Adam}\cite{kingma2014adam} on the other hand tries to combine RMSProp and AdaGrad. Let $M_0 = 0$ and $G_0=0$
+\begin{center}
+    $M_t = \beta M_{t-1} + (1-\beta) \nabla L(x_t)$
+    $G_t = \beta G_{t-1} + (1-\beta) \nabla L(x_t) \nabla L(x_\tau)^T$
+\end{center}
+the equation to update parameters becomes
+\begin{center}
+    $x_{t+1} = x_t -\alpha M_t G_t^{-\frac{1}{2}}$ 
+\end{center}
 
 
-\subsection{Part Two}
+\section{experiment}
 
-\lipsum[3-4]
 
-\section{Part Three}
-
-\lipsum[5-6]
 
 \section{Related Work}
 
