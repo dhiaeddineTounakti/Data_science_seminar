@@ -1,13 +1,13 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.11)  14 JUN 2020 02:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.11)  16 JUN 2020 23:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/dhiaeddine/Projects/Data_science_seminar/Template/paper.tex
-(/home/dhiaeddine/Projects/Data_science_seminar/Template/paper.tex
+**/mnt/c/Users/Shadow/Desktop/Data_science_seminar/Data_science_seminar/Template/paper.tex
+(/mnt/c/Users/Shadow/Desktop/Data_science_seminar/Data_science_seminar/Template/paper.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
-(/home/dhiaeddine/Projects/Data_science_seminar/Template/acmart.cls
+(/mnt/c/Users/Shadow/Desktop/Data_science_seminar/Data_science_seminar/Template/acmart.cls
 Document Class: acmart 2018/08/12 v1.55 Typesetting articles for the Association for Computing Machinery
 (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
@@ -487,7 +487,7 @@ Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 )
 Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 9.
 \c@theorem=\count127
- Excluding comment 'screenonly' Include comment 'printonly' Include comment 'anonsuppress' (/home/dhiaeddine/Projects/Data_science_seminar/Template/paper.aux)
+ Excluding comment 'screenonly' Include comment 'printonly' Include comment 'anonsuppress' (/mnt/c/Users/Shadow/Desktop/Data_science_seminar/Data_science_seminar/Template/paper.aux)
 \openout1 = `paper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -546,7 +546,7 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 9.
 LaTeX Info: Redefining \pageref on input line 9.
 LaTeX Info: Redefining \nameref on input line 9.
- (/home/dhiaeddine/Projects/Data_science_seminar/Template/paper.out) (/home/dhiaeddine/Projects/Data_science_seminar/Template/paper.out)
+ (/mnt/c/Users/Shadow/Desktop/Data_science_seminar/Data_science_seminar/Template/paper.out) (/mnt/c/Users/Shadow/Desktop/Data_science_seminar/Data_science_seminar/Template/paper.out)
 \@outlinefile=\write5
 \openout5 = `paper.out'.
 
@@ -627,36 +627,36 @@ Overfull \hbox (7.69472pt too wide) in paragraph at lines 58--59
 \OT1/cmr/m/n/9 (-20) the \OT1/cmr/bx/n/9 Sto-chas-tic gra-di-ent de-scent with mo-men-tum \OT1/cmr/m/n/9 (-20) [[]].
  []
 
-(/home/dhiaeddine/Projects/Data_science_seminar/Template/paper.bbl
+(/mnt/c/Users/Shadow/Desktop/Data_science_seminar/Data_science_seminar/Template/paper.bbl [1.1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+]
 Missing character: There is no â in font cmr7!
 Missing character: There is no € in font cmr7!
 Missing character: There is no “ in font cmr7!
- [1.1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-]) [2.2
+) [2.2
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 109.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 109.
- (/home/dhiaeddine/Projects/Data_science_seminar/Template/paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 109.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 109.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 113.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 113.
+ (/mnt/c/Users/Shadow/Desktop/Data_science_seminar/Data_science_seminar/Template/paper.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 113.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 113.
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: C4E6E0B8A0FC72A938EA6AAF144E9CA7;1229.
+(rerunfilecheck)             Checksum: 0629917E6FB6F9168A28858DB7CB0ED1;1587.
  ) 
 Here is how much of TeX's memory you used:
- 15581 strings out of 494923
- 226624 string characters out of 6180742
- 467630 words of memory out of 5000000
- 18433 multiletter control sequences out of 15000+600000
- 12173 words of font info for 68 fonts, out of 8000000 for 9000
+ 15591 strings out of 494923
+ 227131 string characters out of 6180742
+ 467633 words of memory out of 5000000
+ 18436 multiletter control sequences out of 15000+600000
+ 12275 words of font info for 70 fonts, out of 8000000 for 9000
  175 hyphenation exceptions out of 8191
- 60i,11n,94p,852b,529s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,11n,94p,875b,525s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb>
-Output written on /home/dhiaeddine/Projects/Data_science_seminar/Template/paper.pdf (2 pages, 206743 bytes).
+Output written on /mnt/c/Users/Shadow/Desktop/Data_science_seminar/Data_science_seminar/Template/paper.pdf (2 pages, 208271 bytes).
 PDF statistics:
- 171 PDF objects out of 1000 (max. 8388607)
- 129 compressed objects within 2 object streams
- 24 named destinations out of 1000 (max. 500000)
- 12385 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 184 PDF objects out of 1000 (max. 8388607)
+ 142 compressed objects within 2 object streams
+ 27 named destinations out of 1000 (max. 500000)
+ 12409 words of extra memory for PDF output out of 14400 (max. 10000000)
 
