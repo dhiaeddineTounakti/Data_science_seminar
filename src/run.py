@@ -1,171 +1,113 @@
-"""This module handles training and evaluation of a neural network model.
-
-Invoke the following command to train the model:
-python -m trainer --model=cnn --dataset=mnist
-
-You can then monitor the logs on Tensorboard:
-tensorboard --logdir=output"""
-
+# %%
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
-
+import vgg
+import provider
 import tensorflow as tf
+import matplotlib.pyplot as plt
 
-tf.logging.set_verbosity(tf.logging.INFO)
 
-tf.flags.DEFINE_string("model", "", "Model name.")
-tf.flags.DEFINE_string("dataset", "", "Dataset name.")
-tf.flags.DEFINE_string("output_dir", "", "Optional output dir.")
-tf.flags.DEFINE_string("schedule", "train_and_evaluate", "Schedule.")
-tf.flags.DEFINE_string("hparams", "", "Hyper parameters.")
-tf.flags.DEFINE_integer("num_epochs", 100000, "Number of training epochs.")
-tf.flags.DEFINE_integer("save_summary_steps", 10, "Summary steps.")
-tf.flags.DEFINE_integer("save_checkpoints_steps", 10, "Checkpoint steps.")
-tf.flags.DEFINE_integer("eval_steps", None, "Number of eval steps.")
-tf.flags.DEFINE_integer("eval_frequency", 10, "Eval frequency.")
-
-FLAGS = tf.flags.FLAGS
-
-HPARAMS = {"Adam":{
-    "optimizer": "Adam",
-    "learning_rate": 0.001,
-    "decay_steps": 10000,
-    "batch_size": 128
+HPARAMS = {
+    "Adam": {
+        "class_name": "Adam",
+        "config": {
+            "learning_rate": 0.0003
+        }
     },
     "RMSProp": {
-        "optimizer": "RMSProp",
-        "learning_rate": 0.001,
-        "decay_steps": 10000,
-        "batch_size": 128
+        "class_name": "RMSProp",
+        "config": {
+            "learning_rate": 0.0003,
+            "epsilon": 1e-08,
+            "centred": True,
+            "rho": 0.99
+        }
+    },
+    "Adagrad": {
+        "class_name": "Adagrad",
+        "config": {
+            "epsilon": 1e-10,
+            "initial_accumulator_value": 0.0,
+            "learning_rate": 0.01
+        }
+
+    },
+    "SGD": {
+        "class_name": "SGD",
+        "config": {
+            "learning_rate": 0.5,
+        }
+    },
+    "HB": {
+        "class_name": "SGD",
+        "config": {
+            "learning_rate": 0.5,
+            "momentum": 0.9
+        }
+
     }
+}
+
+batch_size = 128
+epoch_number = 50
+lr_update_epoch_steps = 25
+
+
+
+def train_test(optimizer):
+    model = vgg.vgg()
+
+    train_data = provider.read(tf.estimator.ModeKeys.TRAIN).batch(batch_size)
+    eval_data = provider.read(tf.estimator.ModeKeys.EVAL).batch(batch_size)
+
+    checkpoint_filepath = './models/'+optimizer+'.weights.{epoch:02d}-{val_loss:.2f}.hdf5' 
+
+    model.compile(
+    optimizer=tf.keras.optimizers.get(HPARAMS[optimizer]),  # Optimizer
+    # Loss function to minimize
+    loss=tf.keras.losses.BinaryCrossentropy(),
+    # List of metrics to monitor
+    metrics=['accuracy'])
+
+    history = model.fit(train_data, batch_size=batch_size,
+                        epochs=epoch_number, callbacks=[
+                            tf.keras.callbacks.ReduceLROnPlateau(
+                                monitor='val_loss', factor=0.5, patience=10, verbose=1, mode='auto',
+                                min_delta=0.0001, cooldown=0, min_lr=0
+                            ),
+                            tf.keras.callbacks.ModelCheckpoint(
+                                checkpoint_filepath, monitor='val_loss', verbose=0, save_best_only=True,
+                                save_weights_only=True, mode='auto', save_freq='epoch'
+                            )
+                        ], validation_data= eval_data)
     
-}
+    model.summary()
 
-def get_params(optimizer):
-    """Aggregates and returns hyper parameters."""
-    hparams = HPARAMS[optimizer]
-    hparams.update(DATASETS[FLAGS.dataset].get_params())
-    hparams = tf.contrib.training.HParams(**hparams)
-    hparams.parse(FLAGS.hparams)
-
-    return hparams
+    return history
 
 
-def input_fn(params, mode):
-    dataset = DATASETS[FLAGS.dataset].read(mode)
-    if mode == tf.estimator.ModeKeys.TRAIN:
-        dataset = dataset.repeat(FLAGS.num_epochs)
-        dataset = dataset.shuffle(params.batch_size * 5)
-    dataset = dataset.map(
-        DATASETS[FLAGS.dataset].parse, num_threads=8)
-    dataset = dataset.batch(params.batch_size)
-    iterator = dataset.make_one_shot_iterator()
-    features, labels = iterator.get_next()
-    return features, labels
+def experiment_optimizer(optimizer):
+    history = train_test(optimizer)
+    plt.plot(history.history['accuracy'])
+    plt.plot(history.history['val_accuracy'])
+    plt.title('model accuracy')
+    plt.ylabel('accuracy')
+    plt.xlabel('epoch')
+    plt.legend(['train', 'test'], loc='upper left')
+    plt.show()
+    # summarize history for loss
+    plt.plot(history.history['loss'])
+    plt.plot(history.history['val_loss'])
+    plt.title('model loss')
+    plt.ylabel('loss')
+    plt.xlabel('epoch')
+    plt.legend(['train', 'test'], loc='upper left')
+    plt.show()
 
 
-
-
-
-
-
-
-MODELS = {
-    # This is a dictionary of models, the keys are model names, and the values
-    # are the module containing get_params, model, and eval_metrics.
-    # Example: "cnn": cnn
-}
-
-DATASETS = {
-    
-}
-
-
-
-
-
-def make_input_fn(mode, params):
-    """Returns an input function to read the dataset."""
-    def _input_fn():
-        dataset = DATASETS[FLAGS.dataset].read(mode)
-        if mode == tf.estimator.ModeKeys.TRAIN:
-            dataset = dataset.repeat(FLAGS.num_epochs)
-            dataset = dataset.shuffle(params.batch_size * 5)
-        dataset = dataset.map(
-            DATASETS[FLAGS.dataset].parse, num_threads=8)
-        dataset = dataset.batch(params.batch_size)
-        iterator = dataset.make_one_shot_iterator()
-        features, labels = iterator.get_next()
-        return features, labels
-    return _input_fn
-
-def make_model_fn():
-    """Returns a model function."""
-    def _model_fn(features, labels, mode, params):
-        model_fn = MODELS[FLAGS.model].model
-        global_step = tf.train.get_or_create_global_step()
-        predictions, loss = model_fn(features, labels, mode, params)
-
-        train_op = None
-        if mode == tf.estimator.ModeKeys.TRAIN:
-            def _decay(learning_rate, global_step):
-                learning_rate = tf.train.exponential_decay(
-                    learning_rate, global_step, params.decay_steps, 0.5,
-                    staircase=True)
-                return learning_rate
-
-            train_op = tf.contrib.layers.optimize_loss(
-                loss=loss,
-                global_step=global_step,
-                learning_rate=params.learning_rate,
-                optimizer=params.optimizer,
-                learning_rate_decay_fn=_decay)
-
-        return tf.contrib.learn.ModelFnOps(
-            mode=mode,
-            predictions=predictions,
-            loss=loss,
-            train_op=train_op)
-
-    return _model_fn
-
-def experiment_fn(run_config, hparams):
-    """Constructs an experiment object."""
-    estimator = tf.contrib.learn.Estimator(
-        model_fn=make_model_fn(), config=run_config, params=hparams)
-    return tf.contrib.learn.Experiment(
-        estimator=estimator,
-        train_input_fn=make_input_fn(tf.estimator.ModeKeys.TRAIN, hparams),
-        eval_input_fn=make_input_fn(tf.estimator.ModeKeys.EVAL, hparams),
-        eval_metrics=MODELS[FLAGS.model].eval_metrics(hparams),
-        eval_steps=FLAGS.eval_steps,
-        min_eval_frequency=FLAGS.eval_frequency)
-
-def main(unused_argv):
-    """Main entry point."""
-    if FLAGS.output_dir:
-        model_dir = FLAGS.output_dir
-    else:
-        model_dir = "output/%s_%s" % (FLAGS.model, FLAGS.dataset)
-
-    DATASETS[FLAGS.dataset].prepare()
-
-    session_config = tf.ConfigProto()
-    session_config.allow_soft_placement = True
-    session_config.gpu_options.allow_growth = True
-    run_config = tf.contrib.learn.RunConfig(
-        model_dir=model_dir,
-        save_summary_steps=FLAGS.save_summary_steps,
-        save_checkpoints_steps=FLAGS.save_checkpoints_steps,
-        save_checkpoints_secs=None,
-        session_config=session_config)
-
-    tf.contrib.learn.learn_runner.run(
-        experiment_fn=experiment_fn,
-        run_config=run_config,
-        schedule=FLAGS.schedule,
-        hparams=get_params())
+def main():
+    experiment_optimizer('Adagrad')
 
 if __name__ == "__main__":
-    tf.app.run()
+    main()

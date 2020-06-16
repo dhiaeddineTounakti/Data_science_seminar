@@ -66,21 +66,12 @@ def read(split):
             images = np.reshape(images, [num, 3, IMAGE_SIZE, IMAGE_SIZE])
             images = np.transpose(images, [0, 2, 3, 1])
 
-            f = plt.figure()
-            plt.imshow(images[0])
-            plt.show()
-
-
             print("Loaded %d examples." % num)
             for image in images:
                 image = cv2.cvtColor(image, cv2.COLOR_RGB2YUV)
                 mean_y = np.mean(image[:,:,0])
                 std_y = np.std(image[:,:,0])
                 image[:,:,0] = (image[:,:,0]-mean_y)/std_y
-
-            plt.imshow(images[0])
-            plt.show()
-
 
             mean_u = np.mean(images[:,:,:,1])
             std_u = np.std(images[:,:,:,1])
@@ -89,10 +80,7 @@ def read(split):
             images[:,:,:,1] = (images[:,:,:,1]-mean_u)/std_u
             images[:,:,:,2] = (images[:,:,:,2]-mean_v)/std_v
 
-            plt.imshow(images[0])
-            plt.show()
-
-            all_images.append(images)
+            all_images.append(images.astype('float32'))
             all_labels.append(labels)
     
     # ! you are going to normalize y locally and normalize u and v globally
@@ -119,8 +107,3 @@ def gaussian1D(size=1, mean=0.25, std=0.5):
     return kernel
 
 
-
-# %%
-
-
-# %%
