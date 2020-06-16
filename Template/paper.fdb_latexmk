@@ -1,16 +1,16 @@
 # Fdb version 3
-["bibtex paper"] 1592093340 "paper.aux" "paper.bbl" "paper" 1592342456
+["bibtex paper"] 1592342214 "paper.aux" "paper.bbl" "paper" 1592342228
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/alpha.bst" 1480098433 23907 a5f93555796fb564b924339521f10a7c ""
-  "literature.bib" 1592342454 3934 37a2c392f0a728f7c566cd57c4f52ae9 ""
-  "paper.aux" 1592342455 2377 0f7e2627ac9084f25f3fdc8563b71668 ""
+  "literature.bib" 1592134797 4040 975dbd4994e89e33a4fb3059a2065fea ""
+  "paper.aux" 1592342215 2649 08e3bbccbbdee1e134d3dacc33011003 ""
   "paper.bcf" 0 -1 0 ""
   (generated)
   "paper.bbl"
   "paper.blg"
-["pdflatex"] 1592342455 "/mnt/c/Users/Shadow/Desktop/Data_science_seminar/Data_science_seminar/Template/paper.tex" "/mnt/c/Users/Shadow/Desktop/Data_science_seminar/Data_science_seminar/Template/paper.pdf" "paper" 1592342456
+["pdflatex"] 1592342214 "/mnt/c/Users/Shadow/Desktop/Data_science_seminar/Data_science_seminar/Template/paper.tex" "/mnt/c/Users/Shadow/Desktop/Data_science_seminar/Data_science_seminar/Template/paper.pdf" "paper" 1592342228
   "/etc/texmf/web2c/texmf.cnf" 1591894201 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/mnt/c/Users/Shadow/Desktop/Data_science_seminar/Data_science_seminar/Template/paper.aux" 1592342455 2377 0f7e2627ac9084f25f3fdc8563b71668 ""
-  "/mnt/c/Users/Shadow/Desktop/Data_science_seminar/Data_science_seminar/Template/paper.tex" 1592342454 5390 5d2e20c42fbdfdd6b0e41197fd8493a8 ""
+  "/mnt/c/Users/Shadow/Desktop/Data_science_seminar/Data_science_seminar/Template/paper.aux" 1592342215 2649 08e3bbccbbdee1e134d3dacc33011003 ""
+  "/mnt/c/Users/Shadow/Desktop/Data_science_seminar/Data_science_seminar/Template/paper.tex" 1592342227 6131 08e31077ac425330c7e30295e5434175 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm" 1480098698 996 a18840b13b499c08ac2de96a99eda4bc ""
@@ -129,16 +129,16 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1591895600 127853 b41f58aff49fe1af38af8d065f49d51c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1591894246 724918 9896cfb4ec640a9728602e69a4ff1a1b ""
   "acmart.cls" 1591091843 88549 a77fa9c51ef3f8480f484c60325746bf ""
-  "paper.aux" 1592342455 2377 0f7e2627ac9084f25f3fdc8563b71668 ""
+  "paper.aux" 1592342215 2649 08e3bbccbbdee1e134d3dacc33011003 ""
   "paper.bbl" 1592342214 2074 7e40a380f9ca90023de69558a74cac91 "bibtex paper"
-  "paper.out" 1592342455 1229 c4e6e0b8a0fc72a938ea6aaf144e9ca7 ""
-  "paper.tex" 1592342454 5390 5d2e20c42fbdfdd6b0e41197fd8493a8 ""
+  "paper.out" 1592342215 1587 0629917e6fb6f9168a28858db7cb0ed1 ""
+  "paper.tex" 1592342227 6131 08e31077ac425330c7e30295e5434175 ""
   (generated)
   "paper.aux"
-  "paper.pdf"
-  "paper.log"
   "/home/dhiaeddine/Projects/Data_science_seminar/Template/paper.pdf"
-  "/mnt/c/Users/Shadow/Desktop/Data_science_seminar/Data_science_seminar/Template/paper.log"
   "/home/dhiaeddine/Projects/Data_science_seminar/Template/paper.log"
   "/mnt/c/Users/Shadow/Desktop/Data_science_seminar/Data_science_seminar/Template/paper.pdf"
   "paper.out"
+  "paper.log"
+  "paper.pdf"
+  "/mnt/c/Users/Shadow/Desktop/Data_science_seminar/Data_science_seminar/Template/paper.log"
