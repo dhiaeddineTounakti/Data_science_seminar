@@ -2,11 +2,11 @@
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
-import vgg
-import provider
+import vgg as vgg
+import provider as provider
 import tensorflow as tf
 import matplotlib.pyplot as plt
-
+import Vgg_from_internet as vgg_internet
 
 HPARAMS = {
     "Adam": {
@@ -50,7 +50,7 @@ HPARAMS = {
 }
 
 batch_size = 128
-epoch_number = 50
+epoch_number = 2
 lr_update_epoch_steps = 25
 
 
@@ -77,7 +77,7 @@ def train_test(optimizer):
                                 min_delta=0.0001, cooldown=0, min_lr=0
                             ),
                             tf.keras.callbacks.ModelCheckpoint(
-                                checkpoint_filepath, monitor='val_loss', verbose=0, save_best_only=True,
+                                checkpoint_filepath, monitor='val_loss', verbose=1, save_best_only=True,
                                 save_weights_only=True, mode='auto', save_freq='epoch'
                             )
                         ], validation_data= eval_data)
@@ -107,7 +107,7 @@ def experiment_optimizer(optimizer):
 
 
 def main():
-    experiment_optimizer('Adagrad')
+    experiment_optimizer('Adam')
 
 if __name__ == "__main__":
     main()

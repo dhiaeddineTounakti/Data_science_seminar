@@ -11,8 +11,8 @@ import pickle
 from six.moves import urllib
 import tensorflow as tf
 import cv2
-from scipy import signal
-import matplotlib.pyplot as plt
+from sklearn.preprocessing import LabelBinarizer
+
 
 REMOTE_URL = "https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz"
 LOCAL_DIR = os.path.join("data/cifar10/")
@@ -68,9 +68,24 @@ def read(split):
 
             print("Loaded %d examples." % num)
 
+            for image in images:
+                image = cv2.cvtColor(image, cv2.COLOR_RGB2YUV)
+                mean_y = np.mean(image[:,:,0])
+                std_y = np.std(image[:,:,0])
+                image[:,:,0] = (image[:,:,0]-mean_y)/std_y
 
+            mean_u = np.mean(images[:,:,:,1])
+            std_u = np.std(images[:,:,:,1])
+            mean_v = np.mean(images[:,:,:,2])
+            std_v = np.std(images[:,:,:,2])
+            images[:,:,:,1] = (images[:,:,:,1]-mean_u)/std_u
+            images[:,:,:,2] = (images[:,:,:,2]-mean_v)/std_v
             all_images.append(images.astype('float32'))
-            all_labels.append(labels)
+            lb = LabelBinarizer()
+            if(split == tf.estimator.ModeKeys.TRAIN):
+                all_labels.append(lb.fit_transform(labels))
+            else:
+                all_labels.append(lb.fit_transform(labels))
     
     # ! you are going to normalize y locally and normalize u and v globally
     all_images = np.concatenate(all_images)
