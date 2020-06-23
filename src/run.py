@@ -6,8 +6,7 @@ import vgg as vgg
 import provider as provider
 import tensorflow as tf
 import matplotlib.pyplot as plt
-import Vgg_from_internet as vgg_internet
-
+import json
 HPARAMS = {
     "Adam": {
         "class_name": "Adam",
@@ -20,7 +19,7 @@ HPARAMS = {
         "config": {
             "learning_rate": 0.0003,
             "epsilon": 1e-08,
-            "centred": True,
+            "centered": True,
             "rho": 0.99
         }
     },
@@ -50,7 +49,7 @@ HPARAMS = {
 }
 
 batch_size = 128
-epoch_number = 2
+epoch_number = 250
 lr_update_epoch_steps = 25
 
 
@@ -60,8 +59,6 @@ def train_test(optimizer):
 
     train_data = provider.read(tf.estimator.ModeKeys.TRAIN).batch(batch_size)
     eval_data = provider.read(tf.estimator.ModeKeys.EVAL).batch(batch_size)
-
-    checkpoint_filepath = './models/'+optimizer+'.weights.{epoch:02d}-{val_loss:.2f}.hdf5' 
 
     model.compile(
     optimizer=tf.keras.optimizers.get(HPARAMS[optimizer]),  # Optimizer
@@ -75,10 +72,6 @@ def train_test(optimizer):
                             tf.keras.callbacks.ReduceLROnPlateau(
                                 monitor='val_loss', factor=0.5, patience=10, verbose=1, mode='auto',
                                 min_delta=0.0001, cooldown=0, min_lr=0
-                            ),
-                            tf.keras.callbacks.ModelCheckpoint(
-                                checkpoint_filepath, monitor='val_loss', verbose=1, save_best_only=True,
-                                save_weights_only=True, mode='auto', save_freq='epoch'
                             )
                         ], validation_data= eval_data)
     
@@ -87,27 +80,16 @@ def train_test(optimizer):
     return history
 
 
-def experiment_optimizer(optimizer):
+def experiment_optimizer(optimizer, run_number):
     history = train_test(optimizer)
-    plt.plot(history.history['accuracy'])
-    plt.plot(history.history['val_accuracy'])
-    plt.title('model accuracy')
-    plt.ylabel('accuracy')
-    plt.xlabel('epoch')
-    plt.legend(['train', 'test'], loc='upper left')
-    plt.show()
-    # summarize history for loss
-    plt.plot(history.history['loss'])
-    plt.plot(history.history['val_loss'])
-    plt.title('model loss')
-    plt.ylabel('loss')
-    plt.xlabel('epoch')
-    plt.legend(['train', 'test'], loc='upper left')
-    plt.show()
+    output_file = open(optimizer + '_' + str(run_number)+'.json', 'w')
+    json.dump(str(history.history), output_file, indent= 6)
+    output_file.close()
 
 
 def main():
-    experiment_optimizer('Adam')
+    experiment_optimizer('Adagrad', 3)
+    
 
 if __name__ == "__main__":
     main()

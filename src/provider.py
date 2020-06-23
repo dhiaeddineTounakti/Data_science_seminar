@@ -9,10 +9,10 @@ import tarfile
 import numpy as np
 import pickle
 from six.moves import urllib
-import tensorflow as tf
+
 import cv2
 from sklearn.preprocessing import LabelBinarizer
-
+import tensorflow as tf
 
 REMOTE_URL = "https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz"
 LOCAL_DIR = os.path.join("data/cifar10/")
