@@ -2,3 +2,4 @@
 *.tar
 data/**
 src/data/**
+paper_review/
