@@ -3,3 +3,4 @@
 data/**
 src/data/**
 paper_review/
+src/__pycache__/**

@@ -28,9 +28,9 @@ for i in Optimizers:
     acc = [measurements[j]['accuracy'] for j in range(5)]
     min_acc = [min(idx) for idx in zip(*acc)]
     max_acc = [max(idx) for idx in zip(*acc)]
-    mean_acc = np.divide([sum(idx) for idx in zip(*loss)],5)
+    mean_acc = np.divide([sum(idx) for idx in zip(*acc)],5)
 
-    val_acc = [measurements[j]['accuracy'] for j in range(5)]
+    val_acc = [measurements[j]['val_accuracy'] for j in range(5)]
     min_val_acc = [min(idx) for idx in zip(*val_acc)]
     max_val_acc = [max(idx) for idx in zip(*val_acc)]
     mean_val_acc = np.divide([sum(idx) for idx in zip(*val_acc)],5)
@@ -48,13 +48,16 @@ t = np.arange(0, 250, 1)
 fig=plt.figure()
 ax=fig.add_subplot(111)
 
-ax.plot(t,Array_measurements['SGD']['loss'],c='g',marker=(8,2,0),ls='--',label='SGD')
+ax.plot(t,Array_measurements['SGD']['loss'],c='g',ls='-',label='SGD')
 ax.plot(t,Array_measurements['HB']['loss'],c='k',ls='-',label='SGD with momentum')
-ax.plot(t,Array_measurements['Adagrad']['loss'],c='b',marker="^",ls='--',label='AdaGrad',fillstyle='none')
-ax.plot(t,Array_measurements['RMSProp']['loss'],c='r',marker="v",ls='-',label='RMSProp')
-ax.plot(t,Array_measurements['Adam']['loss'],marker="o",ls='--',label='Adam',fillstyle='none')
+ax.plot(t,Array_measurements['Adagrad']['loss'],c='b',ls='-',label='AdaGrad',fillstyle='none')
+ax.plot(t,Array_measurements['RMSProp']['loss'],c='r',ls='-',label='RMSProp')
+ax.plot(t,Array_measurements['Adam']['loss'],ls='-',label='Adam',fillstyle='none')
 
-plt.title("Training loss")
+plt.title("Training Loss")
+plt.ylabel('Loss')  
+plt.xlabel('Epochs')
+
 plt.legend()
 plt.show()
 
